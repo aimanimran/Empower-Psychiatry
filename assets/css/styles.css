@@ -271,7 +271,7 @@ p { margin: 0 0 1em; }
 }
 .btn,
 .btn:visited {
-  color: var(--btn-fg);
+  color: #FEF8F3;
 }
 
 .btn::before {
