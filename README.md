@@ -1,6 +1,6 @@
 # Empower Psychiatry Website
 
-Official website for [Empower Psychiatry](https://empowerpsychiatryil.com) — a complete-care psychiatry practice based in Bloomingdale, Illinois.
+Official website for [Empower Psychiatry](https://empowerpsychiatryil.com), a complete-care psychiatry practice based in Bloomingdale, Illinois.
 
 ## Overview
 
