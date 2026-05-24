@@ -728,6 +728,8 @@ p { margin: 0 0 1em; }
   border-radius: var(--radius-md);
   padding: 1.5rem 1.75rem;
   transition: transform var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease), border-left-color var(--t-med) var(--ease);
+  position: relative;
+  cursor: pointer;
 }
 .testimonial:hover {
   transform: translateX(4px);
@@ -748,6 +750,49 @@ p { margin: 0 0 1em; }
   margin-bottom: 1rem;
   font-style: italic;
 }
+.testimonial-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.testimonial-link-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(74, 44, 109, 0.08);
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-purple-700);
+
+  transition:
+    transform var(--t-fast) var(--ease),
+    background var(--t-fast) var(--ease);
+}
+
+.testimonial-stars {
+  color: #f5b301;
+  font-size: 1.15rem;
+  letter-spacing: 0.12rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.testimonial-link:hover .testimonial-link-icon {
+  transform: translate(2px, -2px);
+  background: rgba(74, 44, 109, 0.14);
+}
+
 .testimonial-meta {
   display: flex;
   justify-content: space-between;
