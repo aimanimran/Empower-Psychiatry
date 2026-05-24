@@ -77,12 +77,15 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 
-a {
+a:not(.btn) {
   color: var(--color-purple-700);
   text-decoration: none;
   transition: color var(--t-fast) var(--ease);
 }
-a:hover { color: var(--color-purple-500); }
+
+a:not(.btn):hover {
+  color: var(--color-purple-500);
+}
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
@@ -253,7 +256,12 @@ p { margin: 0 0 1em; }
   position: relative;
   overflow: hidden;
 }
-.btn:visited { color: #fff; }
+
+.btn,
+.btn:link,
+.btn:visited {
+  color: var(--btn-fg);
+}
 
 .btn::before {
   content: '';
@@ -815,6 +823,12 @@ p { margin: 0 0 1em; }
   justify-content: center;
   font-weight: 600;
   letter-spacing: 0.02em;
+}
+
+.book-now-btn,
+.book-now-btn:link,
+.book-now-btn:visited {
+  color: #fff !important;
 }
 
 .contact-methods {
